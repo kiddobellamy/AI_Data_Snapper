@@ -1,0 +1,40 @@
+<!-- labeler.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Etiquetar Captura</title>
+  <style>
+    body { 
+      margin: 0; 
+      padding: 0; 
+      font-family: Arial; 
+      overflow: auto; 
+    }
+    #canvas { 
+      display: block; 
+    }
+    #saveBtn { 
+      position: fixed; 
+      top: 10px; 
+      left: 10px; 
+      padding: 10px; 
+      z-index: 10; 
+      background-color: #4CAF50; 
+      color: white; 
+      border: none; 
+      border-radius: 5px; 
+      cursor: pointer; 
+    }
+    #saveBtn:hover { 
+      background-color: #45a049; 
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <button id="saveBtn">Guardar y cerrar</button>
+  <script src="jszip.min.js"></script>
+  <script src="labeler.js"></script>
+</body>
+</html>
